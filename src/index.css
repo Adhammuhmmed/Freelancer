@@ -1,0 +1,170 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --main-color: #2c3e50;
+  --second-color: #1abc9c;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.navbar {
+  background-color: var(--main-color);
+  z-index: 99999;
+}
+
+.nav-item .active {
+  background-color: var(--second-color);
+}
+footer {
+  background-color: var(--main-color);
+}
+
+footer .icons span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+footer .icons span i {
+  font-size: 20px;
+}
+
+.copyright {
+  background-color: #1a252f;
+}
+
+.home {
+  background-color: var(--second-color);
+}
+
+.home-content .image {
+  background-image: url("./Components/Home/assets/avataaars.svg");
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.line {
+  height: 4px;
+  width: 80px;
+}
+
+.about {
+  background-color: var(--second-color);
+}
+
+.contact .line,
+.portfolio .line {
+  background-color: var(--main-color);
+}
+
+.contact input:focus {
+  box-shadow: none;
+}
+
+.image-cont {
+  cursor: pointer;
+}
+.portfolio .overlay {
+  background-color: rgba(26, 188, 156, 0.877);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.image-cont:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio .overlay i {
+  font-size: 65px;
+}
+
+.page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 114, 218, 0.247);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-overlay .overlay-inner {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+}
+
+.page-overlay .overlay-inner img {
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  color: #1abc9c;
+  top: -20px;
+}
+
