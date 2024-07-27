@@ -2,7 +2,7 @@
   "name": "freelancer",
   "private": true,
   "version": "0.0.0",
-"homepage": "https://Adhammuhmmed.github.io/Freelancer",
+  "homepage": "https://Adhammuhmmed.github.io/freelancer",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
